@@ -1,0 +1,656 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --navbar-height: 59px;
+}
+/* NAVIGATION SECTION  */
+#navbar{
+    display: flex;
+    align-items: center;
+    top: 0px;
+    z-index: 1;
+    position: sticky;
+}
+#navbar::before{
+    content: "";
+    background-color: rgb(0 0 0);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 104%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#navbar img{
+    height: 80px;   
+    border-radius: 40px;                                                     
+}
+
+#navbar ul{
+    display: flex;
+    font-family: 'Mukta';
+    margin-bottom: -18px;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    padding: 2px 2px;
+}
+
+#navbar ul li a{
+    color: rgb(255, 255, 255);
+    padding: 3px 22px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+a.active, a:hover{
+    border: 1px solid white;
+    font-weight: bold;
+}
+
+.fa{
+    display: flex;
+    padding: 10px;
+    margin-top: 19px;
+    width: 22px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.icon{
+   position: absolute;
+   right: 10px;
+}
+
+.fa:hover {
+    opacity: 0.9;
+}
+.fa-facebook {
+    color: white;
+}
+.fa-twitter {
+    color: white;
+}
+.fa-instagram {
+    color: white;
+}
+.fa-facebook:hover{
+    color: white;
+}
+.fa-twitter:hover{
+    color: white;
+}
+.fa-instagram:hover{
+    color: white;
+}
+
+.fa-facebook-f:before, .fa-facebook:before {
+    content: "\f09a";
+    font-size: 20px;
+}
+.fa-twitter:before {
+    content: "\f099";
+    font-size: 20px;
+}
+.fa-instagram:before {
+    content: "\f16d";
+    font-size: 20px;
+}
+
+/* SECTION 1 */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 44px 74px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 26px;
+    
+}
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('bg3.jpg') no-repeat center center/cover;
+    height: 49rem;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity: .92;
+}
+.h-primary{
+    padding-top: 0px;
+}
+.h-one{
+    margin-bottom: -20px;
+    font-family: 'Mukta', sans-serif;
+    color: white;
+    font-size: 80px;
+    text-transform: uppercase;
+    padding-top: 18px;
+}
+.h-two{
+    line-height: 90px;
+    font-family: 'Mukta', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    padding-left: 320px;
+}
+.caption p{
+    color: white;
+    padding-top: 90px;
+    font-size: 46px;
+    font-family: 'Great Vibes', cursive;
+}
+.btn{
+    font-size: 17px;
+    padding: 4px;
+    margin-top: 192px;
+    width: 133px;
+    border: 5px solid white;
+    border-radius: 10px;
+    background: transparent;
+    color: rgb(252, 252, 252);
+    font-family: 'Mukta', sans-serif;
+    font-weight: 900;
+    cursor: pointer;
+}
+.btn:hover{
+    background: rgb(255, 255, 255);
+    color: black;
+}
+
+/* SECTION 2 */
+#timing{
+    text-align: center;
+    height: 27rem;
+    margin: 50px 25px;
+    background: linear-gradient(0deg, #ff840a, #bc191900);
+}
+.time h2{
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+.time h3{
+    font-size: 29px;
+    text-transform: uppercase;
+    padding-top: 17px;
+    line-height: 57px;
+    font-family: 'Mukta';
+}
+.time h1{
+    font-size: 28px;
+    line-height: 90px;
+    font-weight: 900;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+.time p{
+    font-size: 22px;
+    font-family: 'Mukta';
+    line-height: 39px;
+}
+
+/* OFFER SECTION */
+
+#offers{
+    height: 45rem;
+    margin: 50px 25px;
+    background: #01081a;
+    align-items: center;
+}
+.content-2{
+   color: white;
+}
+.content-2 h1{
+    width: fit-content;
+    margin: auto;
+    font-size: 55px;
+    text-transform: uppercase;
+    font-family: 'Mukta';
+    line-height: 8rem;
+}
+.content-2 h2{
+    width: fit-content;
+    font-family: 'Mukta';
+    text-transform: uppercase;
+    margin: auto;
+    font-size: 65px;
+    word-spacing: 6px;
+    border: 5px solid white;
+    border-radius: 25px;
+    padding: 22px 22px;
+    background: #ff8100;
+}
+.content-2 h3{
+    width: fit-content;
+    font-family: 'Mukta';
+    margin: auto;
+    font-size: 20px;
+    padding-top: 9px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.content-2 h4{
+    color: white;
+    width: fit-content;
+    margin: auto;
+    padding-top: 2rem;
+    font-size: 23px;
+    font-family: 'Mukta';
+    text-transform: uppercase;
+    word-spacing: 2px;
+}
+.button{
+    padding-top: 43px;
+    margin: auto;
+    width: fit-content;
+}
+.btn-5{
+    font-size: 20px;
+    font-family: 'Mukta';
+    font-weight: 900;
+    border-radius: 13px;
+    text-transform: uppercase;
+    padding: 3px 9px;
+    border: 4px solid rgb(219, 171, 13);
+}
+.btn-5:hover{
+    color: white;
+    background: rgb(219, 171, 13);
+}
+.terms{
+   padding-top: 4rem;
+}
+.terms-1{
+    background: #00a1ff82;
+    border-radius: 90px;
+    width: 42rem;
+    height: 9rem;
+    margin: auto;
+}
+.content-2 li{
+    width: fit-content;
+    font-family: 'Mukta';
+    margin: auto;
+}
+
+/* SECTION 3 */
+#about{
+    display: flex;
+    margin: 50px 25px;
+    height: 33rem;
+}
+.content img{
+    float: left;
+    height: 33rem;
+    width: 42rem;
+}
+.content{
+    display: flex;
+}
+.text{
+    padding: 64px;
+}
+.text h3{
+    font-size: 21px;
+    font-family: auto;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+.text h1{
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: 'Mukta';
+    line-height: 80px;
+}
+.text p{
+    font-size: 20px;
+    font-family: 'Mukta';
+    line-height: 34px;
+}
+.btn-1{
+    display: block;
+    border: 4px solid rgb(219, 171, 13);
+    height: 40px;
+    width: 22%;
+    margin: auto;
+    text-transform: uppercase;
+    margin-top: 13px;
+    font-size: 17px;
+    font-family: 'Mukta';
+    font-weight: 900;
+}
+
+.btn-2{
+    display: block;
+    border: 4px solid rgb(219, 171, 13);
+    height: 40px;
+    width: 22%;
+    margin: auto;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-family: 'Mukta';
+    font-weight: 900;
+    margin-top: 18px;
+}
+.btn-1:hover{
+    color: white;
+    background: rgb(219, 171, 13);
+}
+.btn-2:hover{
+    color: white;
+    background: rgb(219, 171, 13);
+}
+
+
+/* SECTION 4 */
+#menu{
+    display: flex;
+    margin: 50px 25px;
+    height: 33rem;
+}
+.content-1 img{
+    height: 33rem;
+}
+.content-1{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.text-1{
+    padding: 55px;
+}
+.text-1 h3{
+    font-size: 21px;
+    font-family: auto;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+.text-1 h1{
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: 'Mukta';
+    line-height: 80px;
+}
+.text-1 p{
+    font-size: 20px;
+    font-family: 'Mukta';
+    line-height: 34px;
+}
+.btn-3{
+    display: block;
+    border: 4px solid rgb(219, 171, 13);
+    height: 40px;
+    width: 22%;
+    margin: auto;
+    text-transform: uppercase;
+    margin-top: 13px;
+    font-size: 17px;
+    font-family: 'Mukta';
+    font-weight: 900;
+}
+.btn-4{
+    display: block;
+    border: 4px solid rgb(219, 171, 13);
+    height: 40px;
+    width: 22%;
+    margin: auto;
+    text-transform: uppercase;
+    margin-top: 13px;
+    font-size: 17px;
+    font-family: 'Mukta';
+    font-weight: 900;
+}
+.btn-3:hover{
+    color: white;
+    background: rgb(219, 171, 13);
+}
+.btn-4:hover{
+    color: white;
+    background: rgb(219, 171, 13);
+}
+
+
+/* IMAGE SECTION */
+
+#image{
+    background-color: #ecececad;
+    height: 38rem;
+    margin: 50px 25px;
+}
+.image-h{
+    width: fit-content;
+    margin: auto;
+    letter-spacing: 1px;
+    font-size: 55px;
+    font-family: 'Mukta';
+    text-transform: uppercase;
+    line-height: 90px;
+    padding-top: 14px;
+}
+#image-c{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#image-c .box{
+    height: 187px;
+    padding: 28px 28px;
+}
+#image-c .box img{
+    height: 187px;
+    border-radius: 22px;
+}
+
+/* EVENTS SECTION  */
+#events{
+    background: #ecececad;
+    height: 830px;
+    margin: 50px 25px;
+}
+.event-1{
+    width: fit-content;
+    margin: auto;
+    font-size: 55px;
+    font-family: 'Mukta';
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 13px;
+    padding-top: 13px;
+}
+.content-3{
+    width: fit-content;
+    margin: auto;
+   
+    padding: 100;
+    padding: 15px 32px;
+    color: white;
+    background: #810000;
+    border-radius: 20px;
+}
+.content-3 h1{
+    font-size: 39px;
+    font-family: 'Mukta';
+    text-transform: uppercase;
+}
+.content-3 h2{
+    width: fit-content;
+    margin: auto;
+    font-size: 25px;
+    font-family: 'Mukta';
+    text-transform: uppercase;
+}
+.glimpse-h{
+    width: fit-content;
+    margin: auto;
+    font-size: 28px;
+    font-weight: normal;
+    font-family: 'Mukta';
+    text-transform: uppercase;
+    padding-top: 27px;
+}
+.glimpse-1{
+   display: flex;
+   justify-content: space-evenly;
+   padding-top: 9px;
+}
+.box-1{
+    height: 19rem;
+    width: 13rem;
+}
+.box-1 img{
+    border-radius: 25px;
+    height: 16rem;
+    width: 13rem;
+}
+.box-1 p{
+    width: fit-content;
+    margin: auto;
+    font-size: 23px;
+    font-weight: 900;
+    font-family: 'Mukta';
+    line-height: 46px;
+}
+.box-1 p:hover{
+    opacity: 0.40;
+    cursor: pointer;
+}
+.sponsors{
+   padding-top: 15px;
+}
+.sponsors h1{
+    width: fit-content;
+    margin: auto;
+    font-weight: normal;
+    font-size: 28px;
+    font-family: 'Mukta';
+    text-transform: uppercase;
+}
+.sponsors img{
+    height: 6rem;
+    margin: auto;
+    display: flex;
+    border-radius: 150px;
+    padding: 3px;
+}
+
+/* Contact Section  */
+
+#contact{
+    background: #2e2d2d;
+    height: 790px;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-top: 10px;
+}
+.contact-h{
+    font-size: 55px;
+    padding-top: 0px;
+    font-family: 'Mukta';
+    width: fit-content;
+    margin: auto;
+    color: white;
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+#contact-box input,#contact-box textarea{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    background-color: floralwhite;
+}
+
+#contact-box label{
+    color: white;
+    font-size: 1.3rem;
+    font-family: 'Mukta';
+    padding: 4px;
+    text-transform: uppercase;
+}
+
+#contact-box form{
+    width: 40%;
+    line-height: 32px;
+}
+
+.form-group{
+    margin: 10px;
+    padding: 3px;
+}
+.btn-6{
+    width: 30%;
+    margin: auto;
+    display: block;
+    padding: 10px;
+    border: 3px solid black;
+    font-family: 'Mukta';
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    background-color: #707070d1;
+}
+
+.btn-6:hover{
+   opacity: 0.5;
+}
+
+/* OUR CONTACT  */
+#add{
+   height: 13rem;
+   background: #2e2d2d;
+   color: white;
+}
+.add-1{
+    width: fit-content;
+    margin: auto;
+    font-size: 33px;
+    padding: 28px;
+    font-family: 'Mukta';
+    text-transform: uppercase;
+}
+.content-4{
+    display: flex;
+    justify-content: space-evenly;
+}
+.content-4 p{
+    font-size: 22px;
+    font-family: 'Mukta';
+}
+
+/* FOOTER */
+footer{
+    background: #121212;
+    color: white;
+    padding: 9px 20px;
+    font-family: 'Mukta';
+    font-size: 20px;
+    font-weight: 900;
+}
+.foot p{
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.foot{
+    text-align: center;
+}
